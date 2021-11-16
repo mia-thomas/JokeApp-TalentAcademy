@@ -31,14 +31,3 @@ if __name__ == "__main__":
 if __name__ == "__main__":
      app.run(host='127.0.0.1')
 
-### new movie
-# { "movie" : { "name" : "The Matrix", "release_date" : "1999"} }
-
-
-
-
-
-
-# READ      - GET
-# UPDATE    - PUT
-# DELETE    - GET
