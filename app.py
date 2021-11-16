@@ -1,4 +1,4 @@
-from flask import Flask, request, Response
+from flask import Flask, request, Response, render_template
 import json
 import random
 
@@ -16,13 +16,13 @@ joke_db = {
 
 @app.route("/")
 def hello():
-    return "Hello World"
+    return render_template("index.html")
 
-@app.route("/joke")
-def jokes():
+@app.route("/joke_link")
+def joke_link():
     html_response = random.choice(list(joke_db.values()))
-    print(html_response)
-    return html_response
+    print ('I got clicked!')
+    return html_response, 'Click'
 
 if __name__ == "__main__":
     app.run(debug=True)
