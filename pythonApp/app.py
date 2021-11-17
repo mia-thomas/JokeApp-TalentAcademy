@@ -2,6 +2,7 @@ from flask import Flask, request, Response, render_template
 import json
 import random
 
+
 app = Flask(__name__)
 
 
